@@ -6,7 +6,7 @@ const page = () => {
       id: 1,
       title: "Kanban Drag & Drop",
       tools: ["HTML", "CSS", "Javascript", "React.Js", "Next.js"],
-      github: "https://github.com/Captain-Trenet/kanban-clone",
+      github: "",
       image: "/01.png",
       demoUrl: "https://kanbann-clone.vercel.app/projects/Mobile%20App",
     },
@@ -14,7 +14,7 @@ const page = () => {
       id: 2,
       title: "Transcend",
       tools: ["HTML", "SASS", "Javascript", "React.Js", "Next.js"],
-      github: "https://github.com/HemanthKovuru/transcend",
+      github: "",
       image: "/09.png",
       demoUrl: "https://transcend-five.vercel.app/",
     },
@@ -23,7 +23,7 @@ const page = () => {
       id: 4,
       title: "Sunshine Yoga",
       tools: ["HTML", "CSS", "Javascript", "SASS"],
-      github: "https://github.com/HemanthKovuru/sunshine",
+      github: "",
       image: "/03.png",
       demoUrl: "https://sunshineo.netlify.app/",
     },
@@ -31,7 +31,7 @@ const page = () => {
       id: 5,
       title: "Dreamzone school",
       tools: ["HTML", "CSS", "Javascript", "SASS"],
-      github: "https://github.com/HemanthKovuru/dreamzone",
+      github: "",
       image: "/02.png",
       demoUrl: "https://dreamzone.netlify.app/",
     },
@@ -47,7 +47,7 @@ const page = () => {
       id: 7,
       title: "Memory Mapper",
       tools: ["HTML", "CSS", "Javascript", "React.Js", "SASS"],
-      github: "https://github.com/HemanthKovuru",
+      github: "",
       image: "/05.jpg",
       demoUrl: "https://memorymapper.netlify.app/",
     },
@@ -55,7 +55,7 @@ const page = () => {
       id: 3,
       title: "Idlyfarm",
       tools: ["HTML", "CSS", "Javascript", "React.Js", "SASS", "Node.Js"],
-      github: "https://github.com/HemanthKovuru/idlyfarm",
+      github: "",
       image: "/06.jpg",
       demoUrl: "https://idlyfarm.herokuapp.com/",
     },
@@ -128,24 +128,20 @@ const page = () => {
           <div className={styles.headingSecondary}>Full Stack Developer</div>
           <div className={styles.buttons}>
             {/* <div className={styles.buttonPrimary}>Github</div> */}
-            <a
-              href="https://github.com/HemanthKovuru"
+            <div
               className={
                 styles.animLeft + " " + styles.customBtn + " " + styles.btn
               }
-              target="_blank"
             >
               <div>Github</div>
-            </a>
-            <a
-              href="/files/Resume.pdf"
+            </div>
+            <div
               className={
                 styles.animRight + " " + styles.customBtn + " " + styles.btn
               }
-              target="_blank"
             >
               <div>Resume</div>
-            </a>
+            </div>
           </div>
         </div>
       </div>
@@ -237,21 +233,17 @@ const page = () => {
           </div>
           <div className={styles.footerRight}>
             <a
-              href="https://www.linkedin.com/in/hemanth-kovuru-4022b61ba/"
+              href="https://www.linkedin.com/in/trenet-blair-50781b24a/"
               target="_blank"
               className={styles.ImgContainer}
             >
               <Image alt="" fill={true} src={"/svg/linkedin.png"} />
             </a>
-            <a
-              href="https://github.com/HemanthKovuru"
-              target="_blank"
-              className={styles.ImgContainer}
-            >
+            <a href="" target="_blank" className={styles.ImgContainer}>
               <Image alt="" fill={true} src={"/svg/github.png"} />
             </a>
             <a
-              href="mailto:hemanthkovuruk3@gmail.com"
+              href="mailto:trenetg20@gmail.com"
               target="_blank"
               className={styles.ImgContainer}
             >
