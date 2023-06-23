@@ -72,7 +72,7 @@ const page = () => {
   return (
     <div className={styles.container}>
       {/* section one */}
-      <div className={styles.sectionOne}>
+      <div id="home" className={styles.sectionOne}>
         <div className={styles.navbarTwo}>
           <Image
             src={"/logo-grey.png"}
@@ -90,20 +90,36 @@ const page = () => {
             <span className={styles.navigation__icon}>&nbsp;</span>
           </label>
           <div className={styles.navbar2Right}>
-            <div className={styles.nav2Link}>Home</div>
-            <div className={styles.nav2Link}>Projects</div>
-            <div className={styles.nav2Link}>About Me</div>
-            <div className={styles.nav2Link}>Contact</div>
+            <a href="#home" className={styles.nav2Link}>
+              Home
+            </a>
+            <a href="#projects" className={styles.nav2Link}>
+              Projects
+            </a>
+            <a href="#about" className={styles.nav2Link}>
+              About Me
+            </a>
+            <a href="#contact" className={styles.nav2Link}>
+              Contact
+            </a>
           </div>
         </div>
         <div className={styles.navbarContainer}>
           <div className={styles.navbar}>
             <div className={styles.navbarLeft}>Hemanth Kovuru</div>
             <div className={styles.navbarRight}>
-              <div className={styles.navLink}>Home</div>
-              <div className={styles.navLink}>Projects</div>
-              <div className={styles.navLink}>About Me</div>
-              <div className={styles.navLink}>Contact</div>
+              <a href="#home" className={styles.navLink}>
+                Home
+              </a>
+              <a href="#projects" className={styles.navLink}>
+                Projects
+              </a>
+              <a href="#about" className={styles.navLink}>
+                About Me
+              </a>
+              <a href="#contact" className={styles.navLink}>
+                Contact
+              </a>
             </div>
           </div>
         </div>
@@ -114,14 +130,18 @@ const page = () => {
             {/* <div className={styles.buttonPrimary}>Github</div> */}
             <a
               href="https://github.com/HemanthKovuru"
-              className={styles.customBtn + " " + styles.btn}
+              className={
+                styles.animLeft + " " + styles.customBtn + " " + styles.btn
+              }
               target="_blank"
             >
               <div>Github</div>
             </a>
             <a
               href="/files/Resume.pdf"
-              className={styles.customBtn + " " + styles.btn}
+              className={
+                styles.animRight + " " + styles.customBtn + " " + styles.btn
+              }
               target="_blank"
             >
               <div>Resume</div>
@@ -130,7 +150,7 @@ const page = () => {
         </div>
       </div>
       {/* section two */}
-      <div className={styles.sectionTwo}>
+      <div id="projects" className={styles.sectionTwo}>
         <div className={styles.sectionHeader}>Projects</div>
         <div className={styles.cardsContainer}>
           {data.map((card) => {
@@ -178,7 +198,7 @@ const page = () => {
         </div>
       </div>
       {/* section three */}
-      <div className={styles.sectionThree}>
+      <div id="about" className={styles.sectionThree}>
         <div className={styles.sectionHeader}>About Me</div>
         <p className={styles.aboutMe}>
           My name is Hemanth Kovuru, and I am a Full stack developer. I have a
@@ -195,7 +215,7 @@ const page = () => {
         </p>
       </div>
       {/* section four */}
-      <div className={styles.sectionForm}>
+      <div id="contact" className={styles.sectionForm}>
         <div className={styles.sectionHeader}>GET IN TOUCH</div>
         <form className={styles.form}>
           <input className={styles.input} type="text" placeholder="Name" />
@@ -210,24 +230,40 @@ const page = () => {
         </form>
       </div>
       {/* section footer */}
-      <div className={styles.footerContainer}>
+      <div id="section5" className={styles.footerContainer}>
         <footer className={styles.footer}>
           <div className={styles.footerLeft}>
             &copy;2023 Hemanthkovuru. All rights reserved.
           </div>
           <div className={styles.footerRight}>
-            <div className={styles.ImgContainer}>
+            <a
+              href="https://www.linkedin.com/in/hemanth-kovuru-4022b61ba/"
+              target="_blank"
+              className={styles.ImgContainer}
+            >
               <Image alt="" fill={true} src={"/svg/linkedin.png"} />
-            </div>
-            <div className={styles.ImgContainer}>
+            </a>
+            <a
+              href="https://github.com/HemanthKovuru"
+              target="_blank"
+              className={styles.ImgContainer}
+            >
               <Image alt="" fill={true} src={"/svg/github.png"} />
-            </div>
-            <div className={styles.ImgContainer}>
+            </a>
+            <a
+              href="mailto:hemanthkovuruk3@gmail.com"
+              target="_blank"
+              className={styles.ImgContainer}
+            >
               <Image alt="" fill={true} src={"/svg/mail.png"} />
-            </div>
-            <div className={styles.ImgContainer}>
+            </a>
+            <a
+              href="https://twitter.com/"
+              target="_blank"
+              className={styles.ImgContainer}
+            >
               <Image alt="" fill={true} src={"/svg/twitter.png"} />
-            </div>
+            </a>
           </div>
         </footer>
       </div>
