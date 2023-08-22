@@ -3,27 +3,35 @@ import Image from "next/image";
 const page = () => {
   const data = [
     {
+      id: 2,
+      title: "Pizza Paradise",
+      tools: ["HTML", "SASS", "Javascript", "React.Js", "Next.js"],
+      github: "",
+      image: "/pizza_paradise.png",
+      demoUrl: "https://pizza-paradise-nine.vercel.app/",
+    },
+    {
       id: 1,
       title: "Kanban Drag & Drop",
       tools: ["HTML", "CSS", "Javascript", "React.Js", "Next.js"],
-      github: "https://github.com/Captain-Trenet/kanban-clone",
+      github: "",
       image: "/01.png",
       demoUrl: "https://kanbann-clone.vercel.app/projects/Mobile%20App",
     },
-    {
-      id: 2,
-      title: "Transcend",
-      tools: ["HTML", "SASS", "Javascript", "React.Js", "Next.js"],
-      github: "https://github.com/HemanthKovuru/transcend",
-      image: "/09.png",
-      demoUrl: "https://transcend-five.vercel.app/",
-    },
 
+    {
+      id: 8,
+      title: "Jobelia",
+      tools: ["HTML", "Javascript", "React.Js", "SASS", "Next.Js", "Node.Js"],
+      github: "https://github.com/Captain-Trenet/jobelia",
+      demoUrl: "https://jobelia-captain-trenet.vercel.app/",
+      image: "/jobelia.png",
+    },
     {
       id: 4,
       title: "Sunshine Yoga",
       tools: ["HTML", "CSS", "Javascript", "SASS"],
-      github: "https://github.com/HemanthKovuru/sunshine",
+      github: "",
       image: "/03.png",
       demoUrl: "https://sunshineo.netlify.app/",
     },
@@ -31,7 +39,7 @@ const page = () => {
       id: 5,
       title: "Dreamzone school",
       tools: ["HTML", "CSS", "Javascript", "SASS"],
-      github: "https://github.com/HemanthKovuru/dreamzone",
+      github: "",
       image: "/02.png",
       demoUrl: "https://dreamzone.netlify.app/",
     },
@@ -47,7 +55,7 @@ const page = () => {
       id: 7,
       title: "Memory Mapper",
       tools: ["HTML", "CSS", "Javascript", "React.Js", "SASS"],
-      github: "https://github.com/HemanthKovuru",
+      github: "",
       image: "/05.jpg",
       demoUrl: "https://memorymapper.netlify.app/",
     },
@@ -55,20 +63,11 @@ const page = () => {
       id: 3,
       title: "Idlyfarm",
       tools: ["HTML", "CSS", "Javascript", "React.Js", "SASS", "Node.Js"],
-      github: "https://github.com/HemanthKovuru/idlyfarm",
+      github: "",
       image: "/06.jpg",
       demoUrl: "https://idlyfarm.herokuapp.com/",
     },
-    {
-      id: 8,
-      title: "Ecommerce",
-      tools: ["HTML", "Javascript", "React.Js", "SASS", "Next.Js", "Node.Js"],
-      github: "",
-      demoUrl: "",
-      image: "",
-    },
   ];
-
   return (
     <div className={styles.container}>
       {/* section one */}
