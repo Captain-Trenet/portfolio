@@ -224,8 +224,13 @@ const page = () => {
             rows="6"
             placeholder="Message..."
           />
-
-          <div className={styles.button}>Submit</div>
+          <a
+            className={styles.button}
+            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            target="_blank"
+          >
+            <div>Submit</div>
+          </a>
         </form>
       </div>
       {/* section footer */}
