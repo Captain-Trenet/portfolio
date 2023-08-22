@@ -6,7 +6,7 @@ const page = () => {
       id: 2,
       title: "Pizza Paradise",
       tools: ["HTML", "SASS", "Javascript", "React.Js", "Next.js"],
-      github: "",
+      github: "https://github.com/HemanthKovuru/pizza_paradise",
       image: "/pizza_paradise.png",
       demoUrl: "https://pizza-paradise-nine.vercel.app/",
     },
