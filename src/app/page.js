@@ -137,7 +137,7 @@ const page = () => {
               <div>Github</div>
             </a>
             <a
-              href="/files/Resume.pdf"
+              href="/files/Resume_2025.pdf"
               className={
                 styles.animRight + " " + styles.customBtn + " " + styles.btn
               }
